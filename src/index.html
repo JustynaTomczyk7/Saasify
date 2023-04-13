@@ -1,299 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Sassify</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Author: J.Tomczyk, Graphics: K.Bansal" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-  <title>Sassify</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Author: J.Tomczyk, Graphics: K.Bansal">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-  <div class="container">
-    <nav>
-      <ul class="navlist d-none" id="menu-content">
-        <li><a href="#product">Product</a></li>
-        <li><a href="#solution">Solution</a></li>
-        <li><a href="#customer">Customer</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#aboutus">About us</a></li>
-      </ul>
-      <button class="btn btn-white btn-nav" type="button">Sign up</button>
-      <div class="menu-btn" id="see-menu">
-        <span class="animated-icon"></span>
-      </div>
-    </nav>
-
-    <header>
-      <h1>The fastest way for startups <span class="block">to do any analysis</span></h1>
-      <p>Equals is the only spreadsheet with built-in connections to any <span class="block">database, versioning, and
-          collaboration.</span></p>
-      <div class="email">
-        <form action="/action_page.php">
-          <img src="image/icon_email.svg" alt="icon-email">
-          <input type="email" id="email" name="email" placeholder="Enter your email">
-          <input class="btn btn-blue btn-form" type="submit" value="Start for free">
-        </form>
-      </div>
-      <img src="image/header-img.svg" alt="header-img">
-    </header>
-
-    <div class="partners-logo">
-      <ul class="partners-list">
-        <li><img src="image/slack.svg" alt="slack"></li>
-        <li><img src="image/airbnb.svg" alt="airbnb"></li>
-        <li><img src="image/amazon.svg" alt="amazon"></li>
-        <li><img src="image/google.svg" alt="google"></li>
-        <li><img src="image/netflix.svg" alt="netflix"></li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="container">
-    <section class="services">
-      <h2 class="h2-style" id="product">Our services made <span class="block">for you?</span></h2>
-      <ul class="services-list">
-        <li>
-          <img src="image/services-icon1.svg" alt="services-icon1">
-          <h3 class="h3-style">Task Management</h3>
-          <p>The process of managing a task through its life cycle. It involves planning, testing, tracking.</p>
-          <button class="btn btn-read-more">Read More<img src="image/read-more-icon.svg" alt="read-more-icon"></button>
-        </li>
-        <li>
-          <img src="image/services-icon2.svg" alt="services-icon2">
-          <h3 class="h3-style">Design System</h3>
-          <p>The technology by which a process or procedure is performed with minimal human assistance.</p>
-          <button class="btn btn-read-more">Read More<img src="image/read-more-icon.svg" alt="read-more-icon"></button>
-        </li>
-        <li>
-          <img src="image/services-icon3.svg" alt="services-icon3">
-          <h3 class="h3-style">Best Practices</h3>
-          <p>Creating plan to spend your money, This spending planer is called a budgeting tool for business.</p>
-          <button class="btn btn-read-more">Read More<img src="image/read-more-icon.svg" alt="read-more-icon"></button>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <section class="powerful-platform" id="solution">
+  <body>
     <div class="container">
-      <div class="powerful-text">
-        <h2 class="h2-style">Powerful and easy to use SaaS platform</h2>
-        <p>Use marketing automation to identify hot leads and email your sales team telling them to follow up. Nurture
-          and contact leads at the opportune time to maximize.</p>
-        <button class="btn btn-blue btn-powerful" type="button">Get Started</button>
-      </div>
-      <div class="powerful-img">
-        <img src="image/powerful-person.svg" alt="powerful-person">
+      <nav>
+        <ul class="navlist d-none" id="menu-content">
+          <li><a href="#product">Product</a></li>
+          <li><a href="#solution">Solution</a></li>
+          <li><a href="#customer">Customer</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#aboutus">About us</a></li>
+        </ul>
+        <button class="btn btn-white btn-nav" type="button">Sign up</button>
+        <div class="menu-btn" id="see-menu">
+          <span class="animated-icon"></span>
+        </div>
+      </nav>
+
+      <header>
+        <h1>
+          The fastest way for startups
+          <span class="block">to do any analysis</span>
+        </h1>
+        <p>
+          Equals is the only spreadsheet with built-in connections to any
+          <span class="block">database, versioning, and collaboration.</span>
+        </p>
+        <div class="email">
+          <form action="/action_page.php">
+            <img src="image/icon_email.svg" alt="Email Icon" />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <input
+              class="btn btn-blue btn-form"
+              type="submit"
+              value="Start for free"
+            />
+          </form>
+        </div>
+        <img src="image/header-img.svg" alt="Sassify Website Dashboard" />
+      </header>
+
+      <div class="partners-logo">
+        <ul class="partners-list">
+          <li><img src="image/slack.svg" alt="Logo of Slack" /></li>
+          <li><img src="image/airbnb.svg" alt="Logo of Airbnb" /></li>
+          <li><img src="image/amazon.svg" alt="Logo of Amazon" /></li>
+          <li><img src="image/google.svg" alt="Logo of Google" /></li>
+          <li><img src="image/netflix.svg" alt="Logo of Netflix" /></li>
+        </ul>
       </div>
     </div>
-  </section>
 
-  <section class="work-smarter" id="customer">
     <div class="container">
-      <div class="work-smarter-header">
-        <h2 class="h2-style">Work smarter<span class="block">with easy access for user..</span></h2>
-        <button class="btn btn-white btn-work" type="button">Get Started Now</button>
-      </div>
-      <div class="work-smarter-content">
-        <ol class="work-smarter-counter">
-          <li class="counter">
-            <h3 class="h3-style">Create Account</h3>
-            <p>After learning about your customer service needs, we will get you up</p>
+      <section class="services">
+        <h2 class="h2-style" id="product">
+          Our services made <span class="block">for you?</span>
+        </h2>
+        <ul class="services-list">
+          <li>
+            <img src="image/services-icon1.svg" alt="Services Icon" />
+            <h3 class="h3-style">Task Management</h3>
+            <p>
+              The process of managing a task through its life cycle. It involves
+              planning, testing, tracking.
+            </p>
+            <button class="btn btn-read-more">
+              Read More<img
+                src="image/read-more-icon.svg"
+                alt="Read More Icon"
+              />
+            </button>
           </li>
-          <li class="counter">
-            <h3 class="h3-style">Install tracking code</h3>
-            <p>After learning about your customer service needs, we will get you up</p>
+          <li>
+            <img src="image/services-icon2.svg" alt="Services Icon" />
+            <h3 class="h3-style">Design System</h3>
+            <p>
+              The technology by which a process or procedure is performed with
+              minimal human assistance.
+            </p>
+            <button class="btn btn-read-more">
+              Read More<img
+                src="image/read-more-icon.svg"
+                alt="Read More Icon"
+              />
+            </button>
           </li>
-          <li class="counter">
-            <h3 class="h3-style">Track analytics</h3>
-            <p>After learning about your customer service needs, we will get you up</p>
+          <li>
+            <img src="image/services-icon3.svg" alt="Services Icon" />
+            <h3 class="h3-style">Best Practices</h3>
+            <p>
+              Creating plan to spend your money, This spending planer is called
+              a budgeting tool for business.
+            </p>
+            <button class="btn btn-read-more">
+              Read More<img
+                src="image/read-more-icon.svg"
+                alt="Read More Icon"
+              />
+            </button>
           </li>
-        </ol>
-        <div class="video">
-          <img class="video-img" src="image/video.svg" alt="video">
-          <img class="pause" src="image/pause.svg" alt="pause">
+        </ul>
+      </section>
+    </div>
+
+    <section class="powerful-platform" id="solution">
+      <div class="container">
+        <div class="powerful-text">
+          <h2 class="h2-style">Powerful and easy to use SaaS platform</h2>
+          <p>
+            Use marketing automation to identify hot leads and email your sales
+            team telling them to follow up. Nurture and contact leads at the
+            opportune time to maximize.
+          </p>
+          <button class="btn btn-blue btn-powerful" type="button">
+            Get Started
+          </button>
+        </div>
+        <div class="powerful-img">
+          <img src="image/powerful-person.svg" alt="Platform User" />
         </div>
       </div>
-    </div>
-  </section>
-
-  <div class="container" id="pricing">
-    <section class="pricing">
-      <h2 class="h2-style">Get results first. Pick a plan later.</h2>
-      <div class="period">
-        <div class="buttons-pricing">
-          <button class="btn-monthly" type="button">Monthly</button>
-          <button class="btn-annualy" type="button">Annualy</button>
-        </div>
-        <img src="image/pricing.svg" alt="pricing-icon">
-      </div>
-      <ul class="pricing-list">
-        <li class="pricing-list-1">
-          <h3 class="h3-style">Pro</h3>
-          <div class="price-month">
-            <p class="price price1">$30</p>
-            <p class="month">/month</p>
-          </div>
-          <p class="for">For Small Business</p>
-          <hr>
-          <ul class="list">
-            <li class="list-row"><img src="image/point-blue.svg" alt="point-blue">3 Social profiles</li>
-            <li class="list-row"><img src="image/point-blue.svg" alt="point-blue">12 Team members</li>
-            <li class="list-row"><img src="image/point-blue.svg" alt="point-blue">5 Competitors per profile</li>
-          </ul>
-          <button class="btn btn-blue btn-opacity btn-pricing" type="button">Get Started</button>
-        </li>
-
-        <li class="pricing-list-2">
-          <h3 class="h3-style">Popular</h3>
-          <div class="price-month">
-            <p class="price">$60</p>
-            <p class="month">/month</p>
-          </div>
-          <p class="for">For Medium businessess</p>
-          <hr>
-          <ul class="list">
-            <li class="list-row"><img src="image/point-white.svg" alt="point-white">5 Social profiles</li>
-            <li class="list-row"><img src="image/point-white.svg" alt="point-white">12 Team members</li>
-            <li class="list-row"><img src="image/point-white.svg" alt="point-white">5 Competitors per profile</li>
-            <li class="list-row"><img src="image/point-white.svg" alt="point-white">Hashtags per profile</li>
-          </ul>
-          <button class="btn btn-white btn-pricing" type="button">Get Started</button>
-        </li>
-
-        <li class="pricing-list-1">
-          <h3 class="h3-style">Advanced</h3>
-          <div class="price-month">
-            <p class="price price1">$100</p>
-            <p class="month">/month</p>
-          </div>
-          <p class="for">For Enterprices</p>
-          <hr>
-          <ul class="list">
-            <li class="list-row"><img src="image/point-blue.svg" alt="point-blue">3 Social profiles</li>
-            <li class="list-row"><img src="image/point-blue.svg" alt="point-blue">12 Team members</li>
-            <li class="list-row"><img src="image/point-blue.svg" alt="point-blue">5 Competitors per profile</li>
-            <li class="list-row"><img src="image/point-blue.svg" alt="point-blue">Hashtags per profile</li>
-            <li class="list-row"><img src="image/point-blue.svg" alt="point-blue">3 Social profiles</li>
-            <li class="list-row"><img src="image/point-blue.svg" alt="point-blue">12 Team members</li>
-          </ul>
-          <button class="btn btn-blue btn-pricing" type="button">Get Started</button>
-        </li>
-      </ul>
     </section>
-  </div>
 
-  <div class="container">
-    <section class="customers" id="aboutus">
-      <h2 class="h2-style">What people are saying about us</h2>
-      <ul class="comments">
-        <li>
-          <img src="image/stars.svg" alt="stars">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
-            magna</p>
-          <div class="author">
-            <img src="image/author1.svg" alt="author1">
-            <div class="personals">
-              <p class="name">Kartik Bansal</p>
-              <p class="city">Kota, Rajasthan</p>
+    <section class="work-smarter" id="customer">
+      <div class="container">
+        <div class="work-smarter-header">
+          <h2 class="h2-style">
+            Work smarter<span class="block">with easy access for user..</span>
+          </h2>
+          <button class="btn btn-white btn-work" type="button">
+            Get Started Now
+          </button>
+        </div>
+        <div class="work-smarter-content">
+          <ol class="work-smarter-counter">
+            <li class="counter">
+              <h3 class="h3-style">Create Account</h3>
+              <p>
+                After learning about your customer service needs, we will get
+                you up
+              </p>
+            </li>
+            <li class="counter">
+              <h3 class="h3-style">Install tracking code</h3>
+              <p>
+                After learning about your customer service needs, we will get
+                you up
+              </p>
+            </li>
+            <li class="counter">
+              <h3 class="h3-style">Track analytics</h3>
+              <p>
+                After learning about your customer service needs, we will get
+                you up
+              </p>
+            </li>
+          </ol>
+          <div class="video">
+            <img class="video-img" src="image/video.svg" alt="Video" />
+            <img class="pause" src="image/pause.svg" alt="Pause Icon" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" id="pricing">
+      <section class="pricing">
+        <h2 class="h2-style">Get results first. Pick a plan later.</h2>
+        <div class="period">
+          <div class="buttons-pricing">
+            <button class="btn-monthly" type="button">Monthly</button>
+            <button class="btn-annualy" type="button">Annualy</button>
+          </div>
+          <img src="image/pricing.svg" alt="Discount Icon" />
+        </div>
+        <ul class="pricing-list">
+          <li class="pricing-list-1">
+            <h3 class="h3-style">Pro</h3>
+            <div class="price-month">
+              <p class="price price1">$30</p>
+              <p class="month">/month</p>
+            </div>
+            <p class="for">For Small Business</p>
+            <hr />
+            <ul class="list">
+              <li class="list-row">
+                <img src="image/point-blue.svg" alt="Blue Point" />3 Social
+                profiles
+              </li>
+              <li class="list-row">
+                <img src="image/point-blue.svg" alt="Blue Point" />12 Team
+                members
+              </li>
+              <li class="list-row">
+                <img src="image/point-blue.svg" alt="Blue Point" />5 Competitors
+                per profile
+              </li>
+            </ul>
+            <button class="btn btn-blue btn-opacity btn-pricing" type="button">
+              Get Started
+            </button>
+          </li>
+
+          <li class="pricing-list-2">
+            <h3 class="h3-style">Popular</h3>
+            <div class="price-month">
+              <p class="price">$60</p>
+              <p class="month">/month</p>
+            </div>
+            <p class="for">For Medium businessess</p>
+            <hr />
+            <ul class="list">
+              <li class="list-row">
+                <img src="image/point-white.svg" alt="White Point" />5 Social
+                profiles
+              </li>
+              <li class="list-row">
+                <img src="image/point-white.svg" alt="White Point" />12 Team
+                members
+              </li>
+              <li class="list-row">
+                <img src="image/point-white.svg" alt="White Point" />5
+                Competitors per profile
+              </li>
+              <li class="list-row">
+                <img src="image/point-white.svg" alt="White Point" />Hashtags
+                per profile
+              </li>
+            </ul>
+            <button class="btn btn-white btn-pricing" type="button">
+              Get Started
+            </button>
+          </li>
+
+          <li class="pricing-list-1">
+            <h3 class="h3-style">Advanced</h3>
+            <div class="price-month">
+              <p class="price price1">$100</p>
+              <p class="month">/month</p>
+            </div>
+            <p class="for">For Enterprices</p>
+            <hr />
+            <ul class="list">
+              <li class="list-row">
+                <img src="image/point-blue.svg" alt="Blue Point" />3 Social
+                profiles
+              </li>
+              <li class="list-row">
+                <img src="image/point-blue.svg" alt="Blue Point" />12 Team
+                members
+              </li>
+              <li class="list-row">
+                <img src="image/point-blue.svg" alt="Blue Point" />5 Competitors
+                per profile
+              </li>
+              <li class="list-row">
+                <img src="image/point-blue.svg" alt="Blue Point" />Hashtags per
+                profile
+              </li>
+              <li class="list-row">
+                <img src="image/point-blue.svg" alt="Blue Point" />3 Social
+                profiles
+              </li>
+              <li class="list-row">
+                <img src="image/point-blue.svg" alt="Blue Point" />12 Team
+                members
+              </li>
+            </ul>
+            <button class="btn btn-blue btn-pricing" type="button">
+              Get Started
+            </button>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <section class="customers" id="aboutus">
+        <h2 class="h2-style">What people are saying about us</h2>
+        <ul class="comments">
+          <li>
+            <img src="image/stars.svg" alt="Stars Icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna
+            </p>
+            <div class="author">
+              <img src="image/author1.svg" alt="Kartik Bansal" />
+              <div class="personals">
+                <p class="name">Kartik Bansal</p>
+                <p class="city">Kota, Rajasthan</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="image/stars.svg" alt="Stars Icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna
+            </p>
+            <div class="author">
+              <img src="image/author2.svg" alt="Anil Dvivedi" />
+              <div class="personals">
+                <p class="name">Anil Dvivedi</p>
+                <p class="city">New Delhi</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <img src="image/stars.svg" alt="Stars Icon" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit ut
+              aliquam, purus sit amet luctus venenatis, lectus magna
+            </p>
+            <div class="author">
+              <img src="image/author3.svg" alt="Srijan Sirasikar" />
+              <div class="personals">
+                <p class="name">Srijan Sirasikar</p>
+                <p class="city">Bhadrak</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>
+      <div class="container">
+        <h2>
+          We are here to help <span class="block">you grow your business</span>
+        </h2>
+        <button class="btn btn-white btn-footer" type="button">
+          Get Started Now
+        </button>
+      </div>
+      <hr />
+      <div class="container">
+        <div class="info">
+          <div class="company-info">
+            <h3>Saasify</h3>
+            <p>Data visualization, and expense management for your business.</p>
+          </div>
+          <div class="info-link">
+            <div class="link">
+              <h4>Product</h4>
+              <ul>
+                <li>Digital Invoice</li>
+                <li>Insights</li>
+                <li>Reimbursements</li>
+                <li>Virtual Assistant</li>
+                <li>Artificial Intelligence</li>
+              </ul>
+            </div>
+            <div class="link">
+              <h4>Company</h4>
+              <ul>
+                <li>About Us</li>
+                <li>Newsletters</li>
+                <li>Our Partners</li>
+                <li>Career</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+            <div class="link">
+              <h4>Resources</h4>
+              <ul>
+                <li>Blog</li>
+                <li>Pricing</li>
+                <li>FAQ</li>
+                <li>Events</li>
+                <li>Ebook & Guide</li>
+              </ul>
+            </div>
+            <div class="link">
+              <h4>Follow Us</h4>
+              <ul>
+                <li>LinkedIn</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>YouTube</li>
+              </ul>
             </div>
           </div>
-        </li>
-        <li>
-          <img src="image/stars.svg" alt="stars">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
-            magna</p>
-          <div class="author">
-            <img src="image/author2.svg" alt="author2">
-            <div class="personals">
-              <p class="name">Anil Dvivedi</p>
-              <p class="city">New Delhi</p>
-            </div>
-          </div>
-        </li>
-        <li>
-          <img src="image/stars.svg" alt="stars">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis, lectus
-            magna</p>
-          <div class="author">
-            <img src="image/author3.svg" alt="author3">
-            <div class="personals">
-              <p class="name">Srijan Sirasikar</p>
-              <p class="city">Bhadrak</p>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-  <footer>
-    <div class="container">
-      <h2>We are here to help <span class="block">you grow your business</span></h2>
-      <button class="btn btn-white btn-footer" type="button">Get Started Now</button>
-    </div>
-    <hr>
-    <div class="container">
-      <div class="info">
-        <div class="company-info">
-          <h3>Saasify</h3>
-          <p>Data visualization, and expense management for your business.</p>
-        </div>
-        <div class="info-link">
-          <div class="link">
-            <h4>Product</h4>
-            <ul>
-              <li>Digital Invoice</li>
-              <li>Insights</li>
-              <li>Reimbursements</li>
-              <li>Virtual Assistant</li>
-              <li>Artificial Intelligence</li>
-            </ul>
-          </div>
-          <div class="link">
-            <h4>Company</h4>
-            <ul>
-              <li>About Us</li>
-              <li>Newsletters</li>
-              <li>Our Partners</li>
-              <li>Career</li>
-              <li>Contact Us</li>
-            </ul>
-          </div>
-          <div class="link">
-            <h4>Resources</h4>
-            <ul>
-              <li>Blog</li>
-              <li>Pricing</li>
-              <li>FAQ</li>
-              <li>Events</li>
-              <li>Ebook & Guide</li>
-            </ul>
-          </div>
-          <div class="link">
-            <h4>Follow Us</h4>
-            <ul>
-              <li>LinkedIn</li>
-              <li>Twitter</li>
-              <li>Instagram</li>
-              <li>Facebook</li>
-              <li>YouTube</li>
-            </ul>
-          </div>
         </div>
       </div>
-    </div>
-    <hr>
-    <div class="container">
-      <p class="copyright">Copyright @ 2022. All Rights Reserved.</p>
-    </div>
-  </footer>
-
-</body>
-
+      <hr />
+      <div class="container">
+        <p class="copyright">Copyright @ 2022. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
