@@ -33,7 +33,4 @@ npm run serve
 
 ## Illustrations
 
-![Sassify Image](/src/image/sassify-img1.png)
-![Sassify Image](/src/image/sassify-img2.png)
-![Sassify Image](/src/image/sassify-img3.png)
-![Sassify Image](/src/image/sassify-img4.png)
+![Sassify Image](/src/image/sassify-img.png)
